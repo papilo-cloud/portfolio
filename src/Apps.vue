@@ -26,6 +26,6 @@ export default {
     width: 100%;
     margin: 0;
     background: #10141E;
-    font-family: sans-serif;
+    font-family:'ABeeZee', sans-serif;
   }
 </style>

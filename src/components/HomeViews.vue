@@ -11,12 +11,13 @@
   </div>
   <div class="about">
     <div class="pic">
-      <!-- <img src="../assets/illustration-your-users.svg" alt="abu"> -->
+      <img src="../assets/illustration-your-users.svg" alt="abu">
     </div>
     <!-- <a href="#About">About</a> -->
-    <h2>About</h2>
     <div class="txt">
-      <div>
+    <h2>About</h2>
+    <div class="grid">
+      <div class="msgs">
         <p>
           Logical and result-driven Web Developer, dedicated to building and optimizing
           users-focused website for customers with various business objectives.
@@ -26,16 +27,27 @@
       </div>
       <div>
         <h4> Educational background</h4>
-        <p>
+        <div class="educ">
+          <p>
           An undergraduate in Electrical Engineering,  Ahmadu Bello Unviersity Zaria
-        </p>
-        <p>National Diploma in Electrical Engineering, federal polytechnic Bauchi</p>
-      </div>
-      <div>
+          </p>
+          <p>National Diploma in Electrical Engineering, federal polytechnic Bauchi</p>
+        
+        </div>
+      
         <h4>
           Experienced
         </h4>
-
+        <div class="exp">
+          <p>Html</p>
+          <p>CSS</p>
+          <p>JS</p>
+          <p>React </p>
+          <p>Vue</p>
+          <p>Vuex</p>
+          <p>BootStrap</p>
+        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -77,6 +89,7 @@ export default {
     padding: 0;
     width: 100%;
     height: 100vh;
+    margin-bottom: 2em;
   }
   .main img{
     position: absolute;
@@ -93,7 +106,8 @@ export default {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    /* bottom: 7%; */
+    width: 100%;
+    bottom: 4%;
     color: white;
     line-height: 30px;
   }
@@ -117,13 +131,37 @@ export default {
     line-height: 30px;
     padding: 20px;
   }
+  .txt > div{
+    margin-bottom: 20px;
+    letter-spacing: 0.7px;
+  }
+  .txt .educ, .txt .msgs{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .txt h4, .txt h2{
+    color: #44c1f3;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .txt .exp{
+    display: flex;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+  }
+  .txt .exp p{
+    flex: 1;
+    padding: 12px;
+    /* background: #1e2238; */
+  }
   .pic{
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
     border-radius: 14px;
-    display: none;
   }
   .pic img{
     position: absolute;
@@ -136,5 +174,32 @@ export default {
   .me{
     color:hsl(192, 100%, 9%),
      hsl(207, 100%, 98%),  hsl(0, 100%, 63%), #4487f3
+  }
+  @media screen and (min-width: 768px) {
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+    }
+    .msgs{
+      margin-top: 30px;
+    }
+  } 
+  @media screen and (min-width: 1000px) {
+    .grid{
+      display: unset;
+      /* grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px; */
+    }
+    .about{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    .pic{
+    display: none;
+    }
   }
 </style>
