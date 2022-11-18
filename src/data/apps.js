@@ -5,7 +5,7 @@ export default [
         alt: 'InvoiveApp',
         img: './assets/InvoiveApp.jpg',
         category: 'Vue',
-        tag: ['CSS', 'Vue']
+        tag: ['CSS', 'Vue','Vuex', 'Vue Router']
     },
     { 
         id: 1,
@@ -13,7 +13,7 @@ export default [
         alt: 'DevJobs',
         img: './assets/desktop.png',
         category: 'React',
-        tag: ['CSS', 'React']
+        tag: ['CSS', 'React', 'React Router']
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export default [
         alt: 'Rest_Countries',
         img: './assets/desktop-design-home-dark.jpg',
         category: 'React',
-        tag: ['CSS', 'React']
+        tag: ['CSS', 'React', 'React Router']
     },
     {
         id: 3,

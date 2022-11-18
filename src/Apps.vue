@@ -25,7 +25,7 @@ export default {
     position: relative;
     width: 100%;
     margin: 0;
-    background: #10141E;
+    background: #061528;
     font-family:'ABeeZee', sans-serif;
   }
   html{

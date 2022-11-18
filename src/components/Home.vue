@@ -9,14 +9,15 @@
     <div class="grid">
       <div class="msgs">
         <p>
-          Logical and result-driven Web Developer, dedicated to building and optimizing
+          I am Abdulrahman Badamasi, a.k.a (Jordan).<br/>
+          I'm a Logical and result-driven Web Developer, dedicated to building and optimizing
           users-focused website for customers with various business objectives.
           Enthusiastic and eager to contribute to team success through hardwork, attention to details and excellent organizational skills.
           Motivated to learn, grow and excell in Software Engineering.
         </p>
       </div>
       <div>
-        <h4> Educational background</h4>
+        <h4> Educational background</h4> 
         <div class="educ">
           <p>
           An undergraduate in Electrical Engineering,  Ahmadu Bello Unviersity Zaria
@@ -40,6 +41,38 @@
       </div>
       </div>
     </div>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+        
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+        
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+        
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+        
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam voluptatem, voluptates quae, deleniti repellat, ipsam magnam fuga molestiae culpa eos dignissimos provident totam eaque dolores officiis perspiciatis distinctio? Expedita?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae repellat quidem atque reprehenderit illo perspiciatis consequatur veniam eos eaque laboriosam. Ipsam possimus enim dignissimos perferendis blanditiis magni maiores dicta necessitatibus!
+        Hello Woldee...
+      </p>
+    </div>
   </div>
 </template>
  
@@ -59,26 +92,30 @@ export default {
     margin: 0;
     color: white;
     line-height: 30px;
-    padding: 20px;
+    padding: 4em 20px;
+    padding-bottom: 5em;
   }
   .txt > div{
     margin-bottom: 20px;
     letter-spacing: 0.7px;
   }
   .txt .educ, .txt .msgs{
-    background: rgba(0, 0, 0, 0.3);
+    background: #11334d;
     padding: 12px;
     border-radius: 10px;
   }
   .txt h4, .txt h2{
-    color: #44c1f3;
+    color: #71dfd4;
     text-align: center;
     letter-spacing: 1px;
+  }
+  .txt h4{
+    margin-top: 20px;
   }
   .txt .exp{
     display: flex;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #11334d;
     flex-wrap: wrap;
   }
   .txt .exp p{

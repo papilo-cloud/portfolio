@@ -6,42 +6,34 @@
       <p>Hello I am</p>
       <h1>Jordan Abdul</h1>
       <p>A Frontend Web Developer</p>
-      <button>Hire me</button>
+      <button @click="$emit('selecTabs', 3)">Hire me</button>
     </div>
   </div>
- 
-  <!-- <div v-for="data in datas" :key="data.id" class="main_bdy">
-    <p>{{data.name}}</p>
-    <img :src="data.img" alt="">
-  </div> -->
  </div>
 </template>
 
 <script>
-import data from '../data/apps.js'
 
 export default {
-    data() {
-      return{
-        datas: [...data]
-      }
-    },
+  
     props: {
       abb: String
     },
-    mounted() {
-      console.log(this.datas)
-      
-    }
+   
 }
 </script>
 
 <style scoped>
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   .bdy{
     position: relative;
     margin: 0;
     padding: 0;
+    padding-bottom: 5em;
     width: 100%;
     min-height: 100vh;
   }
@@ -75,7 +67,7 @@ export default {
     line-height: 30px;
   }
   .msg h1{
-    color: #44c1f3;
+    color: #71dfd4;
   }
   button{
     border: none;
@@ -83,8 +75,9 @@ export default {
     padding: 8px 18px;
     letter-spacing: 1px;
     border-radius: 7px;
-    background: #44c1f3;
+    background: #11334d;
     color: white;
+    cursor: pointer;
   }
   .about{
     position: relative;
