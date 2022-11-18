@@ -7,7 +7,7 @@ export default [
         category: 'Vue',
         tag: ['CSS', 'Vue']
     },
-    {
+    { 
         id: 1,
         title: 'DevJobs App',
         alt: 'DevJobs',

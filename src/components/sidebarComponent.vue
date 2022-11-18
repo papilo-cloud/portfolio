@@ -1,12 +1,23 @@
 <template>
   <header class="head">
     <div>
-      <h3>Jordan</h3>
+      <h3>Jordan</h3> 
     </div>
     <nav>
       <button>
         <img src="../assets/icon-menu.svg" alt="menu">
       </button>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#project">project</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>

@@ -1,17 +1,17 @@
 <template>
   <div>
-    <SidebarComponent />
-    <home-views />
+    <!-- <SidebarComponent /> -->
+    <Tabs />
   </div>  
 </template>
 
 <script>
 import SidebarComponent from './components/sidebarComponent.vue';
-import HomeViews from './components/HomeViews.vue';
+import Tabs from './components/tab/Tabs.vue';
 
 export default {
     name: "Apps",
-    components: { SidebarComponent, HomeViews }
+    components: { SidebarComponent, Tabs, Tabs }
 }
 </script>
 
@@ -27,5 +27,8 @@ export default {
     margin: 0;
     background: #10141E;
     font-family:'ABeeZee', sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
   }
 </style>
