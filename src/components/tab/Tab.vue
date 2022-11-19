@@ -27,22 +27,12 @@ export default {
 
 <style scoped>
     .show-enter-active, .show-leave-active {
-        transition: all .3s ease-out;
+        transition: all .4s linear;
         /* transition-timing-function: cubic-bezier(0.7, 0.17, 0.35, .8); */
     }
-    .show-leave-to {
-        opacity: 0;
-        /* visibility: hidden; */
-        transform: translateY(40px);
+    .show-enter,.show-leave-to {
+        /* opacity: 0; */
+        transform: translateY(100px);
     }
-    .show-enter-form{
-        opacity: 0;
-        transition-delay: .2s;
-        transform: translateY(-40px);
-        /* animation: anime 2s ; */
-    }
-    @keyframes anime{
-        0%{ opacity: 0;transform: translateY();}
-    }
-   
+    /* form */
 </style>
