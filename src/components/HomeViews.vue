@@ -20,7 +20,7 @@ export default {
       abb: String
     },
    
-}
+} 
 </script>
 
 <style scoped>
@@ -33,7 +33,7 @@ export default {
     position: relative;
     margin: 0;
     padding: 0;
-    padding-bottom: 5em;
+    /* padding-bottom: 5em; */
     width: 100%;
     min-height: 100vh;
   }
