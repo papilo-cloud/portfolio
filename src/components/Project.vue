@@ -8,7 +8,7 @@
         <img :src="data.img" :alt="data.title">
         <div class="butn">
           <div class="mess">
-            <p>You should be able to:</p>
+            <p class="p1">You should be able to:</p>
              <ul>
               <li v-for="desc in data.desc" :key="desc" class="p">
                 {{desc}}
@@ -16,16 +16,16 @@
              </ul>
           </div>
           <div class="bun">
-            <button>
+            <span>
               <a :href="data.code" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                <img src="../assets/icon-code.svg" class="me" alt="code">
               </a>
-            </button>
-            <button>
+            </span>
+            <span>
               <a :href="data.link" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                <img src="../assets/icon-link.svg" alt="link">
               </a>
-            </button>
+            </span>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@ export default {
   }
   .p{
     font-size: 14.7px;
-    color: azure;
+    color: #378696;
     /* margin: 0; */
     /* padding-left: 30px; */
     line-height: 18px;
@@ -126,6 +126,9 @@ export default {
     position: relative;
     padding: 10px;
   }
+  .mess >.p1{
+    color: #71dfd4;
+  }
  
   .img  .butn .bun{
     position: absolute;
@@ -139,15 +142,28 @@ export default {
     bottom: 0;
     transition-delay: .4s;
   }
- .bun button{
-  color: #000;
-    padding: 12px 20px;
+ .bun span{
+    position: relative;
+    padding: 20px 40px;
+    display: inline-block;
     cursor: pointer;
     margin-right: 10px;
     border: 2px solid #71dfd4;
     outline: none;
     border-radius: 14px;
+    text-align: center;
     background: #71dfd4;
+  }
+  .bun span img{
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #71dfd4;
+  }
+  .bun span .me{
+    /* fill="#71dfd4" */
+    stroke: #71dfd4;
   }
   .poj .lis{
     position: relative;
@@ -156,11 +172,24 @@ export default {
     height: 30px;
     padding: 12px;
   }
+
   .lis p{
     margin-right: 10px;
   }
   .poj p{
     color: white;
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    .main_poj{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2em;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .main_poj{
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1em;
+    }
   }
 </style>

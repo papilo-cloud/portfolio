@@ -145,7 +145,7 @@ export default {
       margin-top: 30px;
     }
   } 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     .grid{
       display: unset;
       /* grid-template-columns: repeat(2, 1fr);

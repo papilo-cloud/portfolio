@@ -10,7 +10,7 @@ export default [
                 "Filter invoices by status (draft/pending/paid)",
                 "Toggle light and dark mode",
                 " View the optimal layout for the app depending on their device's screen size",
-                "See hover states for all interactive elements on the page"],
+                ],
         category: 'Vue',
         tag: ['CSS', 'Vue','Vuex', 'Vue Router'],
         link: "http://invoice-pied-six.vercel.app/",

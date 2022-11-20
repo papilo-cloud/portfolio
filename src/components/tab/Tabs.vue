@@ -2,7 +2,7 @@
     <div class="mains">
         <header class="head">
             <div>
-                <h3>Jordan</h3> 
+                <h2>Jordan</h2> 
             </div>
             <nav>
                 <button>
@@ -94,7 +94,10 @@ import Tab from './Tab.vue';
     justify-content: space-between;
     padding: 18px;
     background: #061528;
-    color: white;
+    /* color: white; */
+  }
+  .head h2{
+    color: #71dfd4;
   }
   button{
     border: none;
@@ -135,16 +138,21 @@ import Tab from './Tab.vue';
     position: relative;
   }
   .tabs li button{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px ;
     padding: 12px;
+  }
+  button{
     color: white;
-
   }
   .active{
     border: 1px solid #71dfd4;
+    color: #71dfd4;
+}
+.active li button{
+  color: #71dfd4;
 }
   .tabs li svg{
     margin-top: 4px;

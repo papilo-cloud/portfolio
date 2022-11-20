@@ -31,7 +31,7 @@ export default {
         /* transition-timing-function: cubic-bezier(0.7, 0.17, 0.35, .8); */
     }
     .show-enter,.show-leave-to {
-        /* opacity: 0; */
+        opacity: 0;
         transform: translateY(100px);
     }
     /* form */
