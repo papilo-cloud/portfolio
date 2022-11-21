@@ -6,7 +6,10 @@
       <p>Hello I am</p>
       <h1>Jordan Abdul</h1>
       <p>A Frontend Web Developer</p>
-      <button @click="$emit('selecTabs', 3)">Hire me</button>
+      <!-- <button @click="$emit('selecTabs', 3)">Hire me</button> -->
+      <button>
+        <a href="mailto:abdulrahmanbadamasi123@gmail.com">Hire me</a>
+      </button>
     </div>
   </div>
  </div>
@@ -36,6 +39,10 @@ export default {
     /* padding-bottom: 5em; */
     width: 100%;
     min-height: 100vh;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
   }
  
   .main{

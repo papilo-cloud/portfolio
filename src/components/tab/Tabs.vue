@@ -58,7 +58,7 @@ import Tab from './Tab.vue';
     },
     mounted() {
         this.tabs = [this.$refs.home,this.$refs.about,this.$refs.project,this.$refs.contact]
-        this.selecTab(2);
+        this.selecTab(0);
 
     },
     methods: {

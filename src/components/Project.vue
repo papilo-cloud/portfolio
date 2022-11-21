@@ -1,39 +1,58 @@
 <template>
   <div class="main_bdy">
-    <h2>Project</h2>
-    <div class="main_poj">
-      <div v-for="data in datas" :key="data.id" class="poj">
-      <p class="title">{{data.title}}</p>
-      <div class="img">
-        <img :src="data.img" :alt="data.title">
-        <div class="butn">
-          <div class="mess">
-            <p class="p1">You should be able to:</p>
-             <ul>
-              <li v-for="desc in data.desc" :key="desc" class="p">
-                {{desc}}
-              </li>
-             </ul>
+    <div class="main1">
+    <h2>Project <span>portfolio</span></h2>
+    <div class="buns">
+          <div>
+            <button class="bun1" @click="showFilter">filter <span> by category</span><img class="ims" src="../assets/icon-arrow-down.svg" alt=""></button>
+            <div class="asses" v-if="filter">
+              <label for="all">
+                <input type="radio" name="bunn" v-model="pick" value="all" id="all"> all
+                <span class="span"></span>
+              </label>
+              <div v-for="(shows, x) in showFilters" :key="x">
+              <label :for="x">
+                <input type="radio" name="bunn" v-model="pick" :value="shows" :id="x"> {{shows}}
+                <span class="span"></span>
+              </label>
+            </div>
+            </div>
           </div>
-          <div class="bun">
-            <span>
-              <a :href="data.code" target="_blank">
-                <img src="../assets/icon-code.svg" class="me" alt="code">
-              </a>
-            </span>
-            <span>
-              <a :href="data.link" target="_blank">
-                <img src="../assets/icon-link.svg" alt="link">
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="lis">
-        <p>Tag:</p>
-        <p v-for="tag in data.tag" :key="tag"> {{tag}}</p>
       </div>
     </div>
+    <div class="main_poj">
+      <div v-for="data in showDatas" :key="data.id" class="poj">
+        <p class="title">{{data.title}}</p>
+        <div class="img">
+          <img :src="data.img" :alt="data.title">
+          <div class="butn">
+            <div class="mess">
+              <p class="p1">You should be able to:</p>
+              <ul>
+                <li v-for="desc in data.desc" :key="desc" class="p">
+                  {{desc}}
+                </li>
+              </ul>
+            </div>
+            <div class="bun">
+              <span class="span1">
+                <a :href="data.code" target="_blank">
+                  <img src="../assets/icon-code.svg" class="me" alt="code">
+                </a>
+              </span>
+              <span>
+                <a :href="data.link" target="_blank">
+                  <img src="../assets/icon-link.svg" alt="link">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="lis">
+          <p>Tag:</p>
+          <p v-for="tag in data.tag" :key="tag"> {{tag}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,9 +63,33 @@ import data from '../data/apps.js'
 export default {
   data() {
       return{
-        datas: [...data]
+        datas: [...data],
+        show: false,
+        filter: false,
+        pick: 'all'
       }
   },
+  computed: {
+    showFilters(){
+      const shw =  this.datas
+      const ans = [...new Set(shw.map(x => x.category)) ]
+      return ans
+    },
+    showDatas(){
+      // let data =  this.datas
+      if( this.pick == 'all'){
+        return this.datas
+      }
+        return this.datas.filter(x => x.category === this.pick)
+    }
+  },
+  methods: {
+    showFilter() {
+      this.filter = !this.filter;
+      const x = document.querySelector('.ims')
+      x.classList.toggle('imss')
+    }
+  }
 }
 </script>
 
@@ -60,9 +103,91 @@ export default {
     min-height: 100vh;
   }
   .main_bdy h2{
-    padding-left: 20px;
     color: #71dfd4;
   }
+  .main_bdy h2 span{
+    color: #178696;
+  }
+  .main_bdy .main1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  /* ile */
+  .buns{
+      position: relative;
+      transition: .4s;
+    }
+    .buns .bun1{
+      color: #71dfd4;
+      cursor: pointer;
+      letter-spacing: 1px;
+      font-size: 14px;
+      padding: 12px;
+      outline: none;
+      border: 1px solid #71dfd4;
+      background: #11334d;
+      border-radius: 10px;
+    }
+    .bun1 img{
+      margin-left: 10px;
+    }
+     .imss{
+      /* position: absolute; */
+      transform: rotate(180deg);
+      transition: .4s;
+      /* padding: 10px;
+      background: white; */
+    }
+    .asses{
+      background: #061528;
+      position: absolute;
+      padding: 20px 10px;
+      left: -20px;
+      top: 48px;
+      transition: .4s;
+      z-index: 1;
+      border-radius: 8px;
+      box-shadow: inset 3px 3px 2px rgba(249, 249, 249, 0.1), inset -3px -3px 2px rgba(249, 249, 249, 0.1) ;
+      color: #178696;
+    }
+    .asses label{
+      position: relative;
+      cursor: pointer;
+      padding-left: 40px;
+      display: block;
+      margin-bottom: 10px;
+    }
+     label input{
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      /* margin-bottom: 10px; */
+    }
+     label .span{
+      width: 20px;
+      height: 20px;
+      border-radius: 10%;
+      /* display: inline-block; */
+      position: absolute;
+      left: 0;
+      top: 0;
+      border:1px solid #11334d;
+    }
+     label input:checked ~ .span::after{
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 12px;
+      left: 7px;
+      border-bottom:1px solid #71dfd4;
+      border-right: 1px solid #71dfd4;
+      transform: rotate(40deg);
+    }
+    label input:checked ~ .span{
+      background: #11334d;
+    }
   .main_poj{
     position: relative;
     display: grid;
@@ -80,6 +205,7 @@ export default {
   
   }
   .poj .title{
+    /* color: rgba(249, 249, 249, 0.9) ; */
     color: #71dfd4;
   }
   .poj .img{
@@ -96,7 +222,7 @@ export default {
   }
   .p{
     font-size: 14.7px;
-    color: #378696;
+    color: #178696;
     /* margin: 0; */
     /* padding-left: 30px; */
     line-height: 18px;
@@ -144,7 +270,7 @@ export default {
   }
  .bun span{
     position: relative;
-    padding: 20px 40px;
+    padding: 18px 40px;
     display: inline-block;
     cursor: pointer;
     margin-right: 10px;
@@ -174,16 +300,30 @@ export default {
   }
 
   .lis p{
+    color: #178696;
     margin-right: 10px;
   }
+  .lis p:nth-child(1){
+    color: rgba(249, 249, 249, 0.9);
+    color: #71dfd4;
+  }
   .poj p{
-    color: white;
     margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .bun1 span{
+      display: none;
+    }
+   
   }
   @media screen and (min-width: 768px) {
     .main_poj{
       grid-template-columns: 1fr 1fr;
       column-gap: 2em;
+    }
+    .asses{
+      left: 0;
     }
   }
   @media screen and (min-width: 1200px) {

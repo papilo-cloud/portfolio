@@ -8,7 +8,6 @@ export default [
                 'Receive form validations when trying to create/edit an invoice' ,
                 "Save draft invoices, and mark pending invoices as paid",
                 "Filter invoices by status (draft/pending/paid)",
-                "Toggle light and dark mode",
                 " View the optimal layout for the app depending on their device's screen size",
                 ],
         category: 'Vue',
@@ -22,7 +21,6 @@ export default [
         alt: 'DevJobs',
         img: './assets/desktop.png',
          desc: ["View the optimal layout for each page depending on their device's screen size",
-                "See hover states for all interactive elements throughout the site",
                 "Be able to filter jobs on the index page by title, location, and whether a job is for a full-time position",
                 "Be able to click a job from the index page so that they can read more information and apply for the job"
             ],
@@ -44,7 +42,7 @@ export default [
                 "Toggle the color scheme between light and dark mode"
             ],
         category: 'React',
-        tag: ['CSS', 'React', 'React Router'],
+        tag: ['CSS', 'React', 'React Router', 'API'],
         link: "http://countries-info-beta.vercel.app/",
         code: "https://github.com/papilo-cloud/countries.git"
     },
@@ -84,7 +82,6 @@ export default [
                 'Add/Remove bookmarks from all movies and TV series' ,
                 'Search for relevant shows on all pages',
                 " View the optimal layout for the app depending on their device's screen size",
-                "See hover states for all interactive elements on the page"
             ],
         img: './assets/movies.webp',
         category: 'Vue',
@@ -117,7 +114,7 @@ export default [
                 "Switch between light and dark themes"
             ],
         category: 'JS',
-        tag: ['CSS', 'JS', 'HTML'],
+        tag: ['CSS', 'JS', 'HTML', 'API'],
         link: "https://papilo-cloud.github.io/GitHub-search-app/?#",
         code: "https://github.com/papilo-cloud/GitHub-search-app.git"
         },
@@ -131,7 +128,7 @@ export default [
                 'Add items to the cart',
                 "View the cart and remove items from it",
                 " View the optimal layout for the app depending on their device's screen size",
-                "See hover states for all interactive elements on the page"],
+            ],
         category: 'JS',
         tag: ['CSS', 'JS', 'HTML'],
         link: "https://papilo-cloud.github.io/E-commerce/",
