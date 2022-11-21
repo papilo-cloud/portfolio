@@ -8,7 +8,6 @@ export default [
                 'Receive form validations when trying to create/edit an invoice' ,
                 "Save draft invoices, and mark pending invoices as paid",
                 "Filter invoices by status (draft/pending/paid)",
-                " View the optimal layout for the app depending on their device's screen size",
                 ],
         category: 'Vue',
         tag: ['CSS', 'Vue','Vuex', 'Vue Router'],
@@ -38,7 +37,6 @@ export default [
                 "Search for a country using an input field",
                 "Filter countries by region",
                 "Click on a country to see more detailed information on a separate page",
-                "Click through to the border countries on the detail page",
                 "Toggle the color scheme between light and dark mode"
             ],
         category: 'React',
@@ -73,6 +71,21 @@ export default [
         tag: ['CSS', 'HTML'],
         link: "https://papilo-cloud.github.io/chatt-app/",
         code: "https://github.com/papilo-cloud/chatt-app.git"
+    },
+    {
+        id: 5,
+        title: 'Task App',
+        alt: 'Task',
+        img: './assets/Screenshot.png',
+         desc: ["Click on the personal button to toggle between personal and business tasks, the default task is personal",
+                "Click a particular task to mark as completed",
+                "DoubleClick a particular task to edit the task for changes",
+                "filter your tasks"
+            ],
+        category: 'React',
+        tag: ['CSS', 'React', ],
+        link: "http://react-task-app-self.vercel.app/",
+        code: "https://github.com/papilo-cloud/react-task-app.git"
     },
     {
         id: 10,
