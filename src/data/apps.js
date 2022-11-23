@@ -144,8 +144,8 @@ export default [
             ],
         category: 'JS',
         tag: ['CSS', 'JS', 'HTML'],
-        link: "https://papilo-cloud.github.io/E-commerce/",
-        code: "https://github.com/papilo-cloud/E-commerce.git"
+        link: "http://ecommerce-beryl-phi.vercel.app/",
+        code: "https://github.com/papilo-cloud/ecommerce.git"
     },
     
 ]

@@ -186,10 +186,20 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: #11334d;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 20px;
   }
   .expp .ep{
     display: flex;
     gap: 20px;
+  }
+  .expp1 .ep{
+    background: #11334d;
+    border-radius: 10px;
+    padding: 14px;
+    /* margin-bottom: 20px; */
   }
   .exp1 ul{
     padding-left: 13px;
