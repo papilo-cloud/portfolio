@@ -13,7 +13,7 @@
           I'm a Logical and result-driven Web Developer, dedicated to building and optimizing
           users-focused website for customers with various business objectives.
           Enthusiastic and eager to contribute to team success through hardwork, attention to details and excellent organizational skills.
-          Motivated to learn, grow and excell in Software Engineering.
+          Motivated to learn, grow and excel in Software Engineering.
         </p>
       </div>
       <div>
