@@ -29,7 +29,7 @@ export default {
   .contact{
     position: relative;
     width: 100%;
-    padding-top: 4em;
+    padding-top: 4.9em;
   }
   .contact h2{
     color: #71dfd4;
@@ -79,7 +79,10 @@ export default {
       position: absolute;
       left: 50%;
       /* top: 50%; */
-      transform: translateX(-50%);
+      transform: translate(-50%);
+    }
+    .contact{
+    padding-top: 5.9em;
     }
   }
 </style>

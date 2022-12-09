@@ -138,7 +138,7 @@ export default {
     margin: 0;
     color: #178696;
     line-height: 30px;
-    padding: 4em 20px;
+    padding: 4.4em 20px;
     padding-bottom: 5em;
   }
   .txt > div{
@@ -236,6 +236,9 @@ export default {
      hsl(207, 100%, 98%),  hsl(0, 100%, 63%), #4487f3
   }
   @media screen and (min-width: 768px) {
+    .about{
+    padding-top:5.9em ;
+    }
     .grid{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -275,7 +278,7 @@ export default {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 30px;
-      padding: 4.8em 40px;
+      padding: 6.8em 40px;
     }
      .exp1{
       display: none;

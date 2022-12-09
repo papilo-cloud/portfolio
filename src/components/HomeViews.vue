@@ -139,6 +139,9 @@ export default {
      hsl(207, 100%, 98%),  hsl(0, 100%, 63%), #4487f3
   }
   @media screen and (min-width: 768px) {
+    .bdy{
+      margin-top: 4.9em;
+    }
     .grid{
       display: grid;
       grid-template-columns: repeat(2, 1fr);

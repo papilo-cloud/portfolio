@@ -9,9 +9,8 @@
                     <img src="/assets/icon-menu.svg" @click="openTabs"  alt="menu">
                 </button>
             </nav>
-        </header>
-        <ul class="tabs">
-            <li v-for="(tab, index) in tabs" @click="selecTab(index)"  :key="index">
+            <ul class="tabs">
+              <li v-for="(tab, index) in tabs" @click="selecTab(index)"  :key="index">
                 <button :class="{active: selectedIndex == index }">
                     {{tab.abb}} 
                      <svg v-if="index == 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path class="segment-fill mode" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
@@ -20,8 +19,9 @@
                      <svg v-if="index == 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path class="segment-fill mode" d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/></svg>
                 </button>
             </li>
-
         </ul> 
+        </header>
+        
         <div>
             <tab ref="home" abb="home">
                 <HomeViews @selec-tabs="selecTabs" />
@@ -92,9 +92,12 @@ import Tab from './Tab.vue';
     z-index: 1000000;
     display: flex;
     justify-content: space-between;
-    padding: 18px;
+    /* padding: 18px; */
     background: #061528;
     /* color: white; */
+  }
+  .head div, .head nav{
+    padding: 18px;
   }
   .head h2{
     color: #71dfd4;
@@ -116,21 +119,30 @@ import Tab from './Tab.vue';
     height: 100vh;
   }
   .tabs{
-    position: absolute;
-    position: fixed;
-    bottom: -100px;
+    position: relative;
     display: flex;
     list-style: none;
     justify-content: space-around;
     margin: 0;
     padding: 8px 0;
-    width: 100%;
-    background: #11334d;
     border-radius: 20px 20px 0 0 ;
     transition: all .3s;
     z-index: 100000;
+    max-width: 500px;
+    }
+  @media screen and (max-width: 768px) {
+  .tabs{
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    background: #11334d;
+    }
   }
- 
+  @media screen and (min-width: 768px) {
+    nav button{
+      display: none;
+    }
+  }
   .show{
     bottom: 0;
   }

@@ -4,7 +4,7 @@
       <h3>Jordan</h3> 
     </div>
     <nav>
-      <button>
+      <button class="menu">
         <img src="../assets/icon-menu.svg" alt="menu">
       </button>
       <ul>
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped> 
   .head{
     position: fixed;
     width: 100%;
@@ -45,4 +45,5 @@ export default {
     outline: none;
     background: transparent;
   }
+ 
 </style>
