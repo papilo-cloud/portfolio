@@ -1,4 +1,22 @@
 export default [
+
+    {
+        id: 12,
+        title: 'A Dictionary+Word coach App',
+        alt: 'Dictionary_app',
+        img: './assets/dictionary.jpg',
+         desc: [
+                "Search for a word using the search bar",
+                "See similar and dissimilar words",
+                "Click on similar/dissimilar word for short definition",
+                "Listen to the pronunciation",
+                "Learn new words by playing the word coach game"
+            ],
+        category: 'React',
+        tag: ['CSS', 'React', 'API'],
+        link: "https://word-coach-rho.vercel.app/",
+        code: "https://github.com/papilo-cloud/word-coach.git"
+    },
     {
         id: 0,
         title: 'invoice App',
