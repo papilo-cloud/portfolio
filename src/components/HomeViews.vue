@@ -1,7 +1,7 @@
 <template>
  <div class="bdy">
   <div class="main">
-    <img src="../assets/illustration-flowing-conversation.svg" alt="">
+    <img src="../assets/illustration-flowing-conversation.svg" alt="background-image">
     <div class="msg">
       <p>Hello I am</p>
       <h1>Jordan Abdul</h1>
@@ -57,9 +57,11 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    /* bottom: 10%; */
-    width: 100%;
-    height: 80%;
+    top: 30%;
+    width: 300px;
+    margin-inline: auto;
+    left: 50%;
+    transform: translateX(-50%);
     object-fit: contain;
   }
   .msg{
@@ -69,7 +71,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    bottom: 4%;
+    bottom: 10%;
     color: white;
     line-height: 30px;
   }
@@ -146,6 +148,10 @@ export default {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 10px;
+    }
+    .main img{
+      width: 500px;
+      top: 10%;
     }
     .msgs{
       margin-top: 30px;

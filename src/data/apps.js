@@ -1,7 +1,22 @@
 export default [
-
     {
-        id: 12,
+        id: 11,
+        title: 'Designo multi-page website',
+        alt: 'Designi website',
+        img: './assets/des.jpg',
+         desc: [
+                "View the optimal layout for each page depending on their device's screen size",
+                "See hover states for all interactive elements throughout the site",
+                "Receive an error message when the contact form is submitted if fields are empty",
+                "View actual locations on the locations page maps",
+            ],
+        category: 'React',
+        tag: ['CSS', 'React', 'TypeScript', 'React Router', 'API'],
+        link: "https://designo-ebon.vercel.app/",
+        code: "https://github.com/papilo-cloud/designo.git"
+    },
+    {
+        id: 6,
         title: 'A Dictionary+Word coach App',
         alt: 'Dictionary_app',
         img: './assets/dictionary.jpg',

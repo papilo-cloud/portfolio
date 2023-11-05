@@ -199,7 +199,7 @@ export default {
     width: 100%;
     min-height: 300px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 5em;
     border-bottom: 1px solid #11334d;
     /* box-shadow: 3px 3px 3em rgba(0, 0, 0, 0.9) ; */
   
