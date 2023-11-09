@@ -1,4 +1,5 @@
 <template>
+  <div class="main-container">
   <div class="contact">
     <h2>Contact </h2>
     <div>
@@ -12,6 +13,7 @@
         <button type="submit">Send</button>
       </form>
     </div> 
+  </div>
   </div>
 </template>
 

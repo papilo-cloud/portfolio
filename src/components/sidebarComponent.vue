@@ -1,4 +1,5 @@
 <template>
+  <div class="main-container">
   <header class="head">
     <div>
       <h3>Jordan</h3> 
@@ -20,6 +21,7 @@
       </ul>
     </nav>
   </header>
+  </div>
 </template>
 
 <script>

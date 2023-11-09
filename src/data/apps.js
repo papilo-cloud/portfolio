@@ -3,7 +3,7 @@ export default [
         id: 11,
         title: 'Designo multi-page website',
         alt: 'Designi website',
-        img: './assets/des.jpg',
+        img: './assets/screenshots.jpg',
          desc: [
                 "View the optimal layout for each page depending on their device's screen size",
                 "See hover states for all interactive elements throughout the site",

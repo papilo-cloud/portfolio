@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <!-- <SidebarComponent /> -->
     <Tabs />
   </div>  
@@ -26,9 +26,18 @@ export default {
     width: 100%;
     margin: 0;
     background: #061528;
-    font-family:'ABeeZee', sans-serif;
+    font-family:'Jost', sans-serif;
   }
   html{
     scroll-behavior: smooth;
+  }
+  .main-container{
+    width: min(1200px, 100%);
+    margin-inline: auto;
+  }
+  @media (max-width: 75em){
+    .main-container{
+        width: min(779px, 100%);
+    }
   }
 </style>
