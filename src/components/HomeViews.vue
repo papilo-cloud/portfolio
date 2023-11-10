@@ -1,10 +1,11 @@
 <template>
+  <div class="main-container">
  <div class="bdy">
   <div class="main">
-    <img src="../assets/illustration-flowing-conversation.svg" alt="background-image">
+    <img src="../assets/illustration-flowing-conversation.svg" alt="background-image" >
     <div class="msg">
       <p>Hello I am</p>
-      <h1>Jordan Abdul</h1>
+      <h2>Jordan Abdul</h2>
       <p>A Frontend Web Developer</p>
       <!-- <button @click="$emit('selecTabs', 3)">Hire me</button> -->
       <button>
@@ -12,6 +13,7 @@
       </button>
     </div>
   </div>
+ </div>
  </div>
 </template>
 
@@ -38,7 +40,7 @@ export default {
     padding: 0;
     /* padding-bottom: 5em; */
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   a{
     text-decoration: none;
@@ -57,7 +59,7 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    top: 30%;
+    top: 10%;
     width: 300px;
     margin-inline: auto;
     left: 50%;
@@ -71,19 +73,26 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    bottom: 10%;
+    bottom: 20%;
     color: white;
-    line-height: 30px;
+    line-height: 2.2em;
   }
-  .msg h1{
+  .msg p{
+    font-size: 1em;
+    
+  }
+  .msg h2{
+    font-size: 2em;
     color: #71dfd4;
   }
   button{
     border: none;
     outline: none;
-    padding: 8px 18px;
+    padding: 10px 28px;
     letter-spacing: 1px;
+    margin-top: 10px;
     border-radius: 7px;
+    font-size: 1em;
     background: #11334d;
     color: white;
     cursor: pointer;

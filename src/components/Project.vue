@@ -1,4 +1,5 @@
 <template>
+  <div class="main-container">
   <div class="main_bdy">
     <div class="main1">
     <h2>Project <span>portfolio</span></h2>
@@ -21,7 +22,7 @@
       </div>
     </div>
     <div class="main_poj">
-      <div v-for="data in showDatas" :key="data.id" class="poj">
+      <div v-for="data in showDatas" :key="data.id" class="poj" data-aos="slide-up" data-aos-duration="1000">
         <p class="title">{{data.title}}</p>
         <div class="img">
           <img :src="data.img" :alt="data.title">
@@ -54,6 +55,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -94,6 +96,9 @@ export default {
 </script>
 
 <style scoped>
+
+
+
   .main_bdy{
     position: relative;
     width: 100%;
@@ -329,7 +334,7 @@ export default {
   @media screen and (min-width: 1200px) {
     .main_poj{
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 1em;
+      /* column-gap: 1em; */
     }
   }
 </style>

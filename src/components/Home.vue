@@ -1,7 +1,8 @@
 <template>
+  <div class="main-container">
   <div class="about" id="about">
     <div class="pic">
-      <img src="../assets/illustration-your-users.svg" alt="abu">
+      <img src="../assets/illustration-your-users.svg" alt="illustration" data-aos="fade-in" data-aos-duration="1000">
     </div>
     <!-- <a href="#About">About</a> -->
     <div class="txt">
@@ -119,6 +120,7 @@
         </div>
         </div>
       </div>
+  </div>
   </div>
 </template>
  

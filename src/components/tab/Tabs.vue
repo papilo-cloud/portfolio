@@ -1,8 +1,9 @@
 <template>
+  <div class="container">
     <div class="mains">
         <header class="head">
             <div>
-                <h2>Jordan</h2> 
+                <h1>Jordan</h1> 
             </div>
             <nav>
                 <button>
@@ -36,6 +37,7 @@
                 <contact />
             </tab> 
         </div>
+    </div>
     </div>
   </template>
  
@@ -84,14 +86,24 @@ import Tab from './Tab.vue';
  </script>
  
  <style scoped>
+  .container{
+    width: min(1200px, 100%);
+    margin-inline: auto;
+  }
+  @media (max-width: 75em){
+    .container{
+        width: min(779px, 100%);
+    }
+  }
   .head{
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* padding: 18px; */
     background: #061528;
     /* color: white; */
@@ -99,8 +111,9 @@ import Tab from './Tab.vue';
   .head div, .head nav{
     padding: 18px;
   }
-  .head h2{
+  .head h1{
     color: #71dfd4;
+    font-size: 2.4em;
   }
   button{
     border: none;
@@ -108,6 +121,9 @@ import Tab from './Tab.vue';
     background: transparent;
     cursor: pointer;
     padding: 4px;
+  }
+  button img{
+    width: 26px;
   }
   button:hover{
     border: 1px dashed #44c1f3;
