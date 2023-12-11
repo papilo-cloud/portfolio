@@ -202,7 +202,7 @@ export default {
   .poj{
     position: relative;
     width: 100%;
-    min-height: 300px;
+    min-height: 349px;
     overflow: hidden;
     margin-bottom: 5em;
     border-bottom: 1px solid #11334d;

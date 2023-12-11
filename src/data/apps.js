@@ -1,5 +1,35 @@
 export default [
     {
+        id: 0,
+        title: 'invoice App',
+        alt: 'InvoiveApp',
+        img: './assets/InvoiveApp.jpg',
+         desc: ["Create, read, update, and delete invoices",
+                'Receive form validations when trying to create/edit an invoice' ,
+                "Save draft invoices, and mark pending invoices as paid",
+                "Filter invoices by status (draft/pending/paid)",
+                ],
+        category: 'Vue',
+        tag: ['CSS', 'Vue','Vuex', 'Vue Router'],
+        link: "http://invoice-pied-six.vercel.app/",
+        code: "https://github.com/papilo-cloud/invoice.git"
+    },
+    {
+        id: 7,
+        title: 'Memory Game',
+        alt: 'memory',
+        img: './assets/desktop-multiplayer.png',
+         desc: ["Play the Memory game either solo or multiplayer (up to 4 players)",
+                "Set the theme to use numbers or icons within the tiles" ,
+                "Choose to play on either a 6x6 or 4x4 grid",
+                "View the optimal layout for the game depending on their device's screen size",
+            ],
+        category: 'React',
+        tag: ['CSS', 'React'],
+        link: "https://memory-liard.vercel.app/",
+        code: "https://github.com/papilo-cloud/memory.git"
+    },
+    {
         id: 11,
         title: 'Designo multi-page website',
         alt: 'Designi website',
@@ -31,21 +61,6 @@ export default [
         tag: ['CSS', 'React', 'API'],
         link: "https://word-coach-rho.vercel.app/",
         code: "https://github.com/papilo-cloud/word-coach.git"
-    },
-    {
-        id: 0,
-        title: 'invoice App',
-        alt: 'InvoiveApp',
-        img: './assets/InvoiveApp.jpg',
-         desc: ["Create, read, update, and delete invoices",
-                'Receive form validations when trying to create/edit an invoice' ,
-                "Save draft invoices, and mark pending invoices as paid",
-                "Filter invoices by status (draft/pending/paid)",
-                ],
-        category: 'Vue',
-        tag: ['CSS', 'Vue','Vuex', 'Vue Router'],
-        link: "http://invoice-pied-six.vercel.app/",
-        code: "https://github.com/papilo-cloud/invoice.git"
     },
     { 
         id: 1,
@@ -92,19 +107,19 @@ export default [
         link: "http://timer-jdfc.vercel.app/",
         code: "https://github.com/papilo-cloud/Timer.git"
     },
-    { 
-        id: 4,
-        title: 'Chat App Illustration',
-        alt: 'Chat',
-        desc: ["View the optimal layout for the component",
-                "See the chat interface animate on the initial load",
-            ],
-        img: './assets/desktop-design.jpg',
-        category: 'CSS',
-        tag: ['CSS', 'HTML'],
-        link: "https://papilo-cloud.github.io/chatt-app/",
-        code: "https://github.com/papilo-cloud/chatt-app.git"
-    },
+    // { 
+    //     id: 4,
+    //     title: 'Chat App Illustration',
+    //     alt: 'Chat',
+    //     desc: ["View the optimal layout for the component",
+    //             "See the chat interface animate on the initial load",
+    //         ],
+    //     img: './assets/desktop-design.jpg',
+    //     category: 'CSS',
+    //     tag: ['CSS', 'HTML'],
+    //     link: "https://papilo-cloud.github.io/chatt-app/",
+    //     code: "https://github.com/papilo-cloud/chatt-app.git"
+    // },
     {
         id: 5,
         title: 'Task App',
@@ -116,7 +131,7 @@ export default [
                 "filter your tasks"
             ],
         category: 'React',
-        tag: ['CSS', 'React', ],
+        tag: ['CSS', 'React' ],
         link: "http://react-task-app-self.vercel.app/",
         code: "https://github.com/papilo-cloud/react-task-app.git"
     },
@@ -135,20 +150,7 @@ export default [
         link: "https://movie-app-chi-two.vercel.app/bookmarked",
         code: "https://github.com/papilo-cloud/movie-app.git"
     },
-    {
-        id: 7,
-        title: 'Calculator App',
-        alt: 'Calculator',
-        img: './assets/desktop-design-theme-1.jpg',
-         desc: ["See the size of the elements adjust based on their device's screen size",
-                "Perform mathematical operations like addition, subtraction, multiplication, and division" ,
-                "Adjust the color theme based on their preference",
-            ],
-        category: 'JS',
-        tag: ['CSS', 'JS', 'HTML'],
-        link: "https://papilo-cloud.github.io/Calculator-app-main/",
-        code: "https://github.com/papilo-cloud/Calculator-app-main.git"
-    },
+   
     {
         id: 8,
         title: 'GitHub User Search App',
@@ -164,21 +166,21 @@ export default [
         link: "https://papilo-cloud.github.io/GitHub-search-app/?#",
         code: "https://github.com/papilo-cloud/GitHub-search-app.git"
         },
-    {
-        id: 9,
-        title: 'Ecommerce Product Page',
-        alt: 'Ecommerce',
-        img: './assets/active-states-basket-empty.jpg',
-         desc: ["Open a lightbox gallery by clicking on the large product image",
-                'Switch the large product image by clicking on the small thumbnail images' ,
-                'Add items to the cart',
-                "View the cart and remove items from it",
-                " View the optimal layout for the app depending on their device's screen size",
-            ],
-        category: 'JS',
-        tag: ['CSS', 'JS', 'HTML'],
-        link: "http://ecommerce-beryl-phi.vercel.app/",
-        code: "https://github.com/papilo-cloud/ecommerce.git"
-    },
+    // {
+    //     id: 9,
+    //     title: 'Ecommerce Product Page',
+    //     alt: 'Ecommerce',
+    //     img: './assets/active-states-basket-empty.jpg',
+    //      desc: ["Open a lightbox gallery by clicking on the large product image",
+    //             'Switch the large product image by clicking on the small thumbnail images' ,
+    //             'Add items to the cart',
+    //             "View the cart and remove items from it",
+    //             " View the optimal layout for the app depending on their device's screen size",
+    //         ],
+    //     category: 'JS',
+    //     tag: ['CSS', 'JS', 'HTML'],
+    //     link: "http://ecommerce-beryl-phi.vercel.app/",
+    //     code: "https://github.com/papilo-cloud/ecommerce.git"
+    // },
     
 ]
