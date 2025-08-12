@@ -1,5 +1,21 @@
 export default [
     {
+        id: 12,
+        title: 'CreateWill dApp',
+        alt: 'createwill',
+        img: './assets/createwill.jpg',
+         desc: ["Create a Digital Will with multiple beneficiaries and custom distribution percentages",
+                "Manual Executor Access: Any user can trigger the will once it's eligible" ,
+                'Ping Mechanism to prove you’re still active ("alive")',
+                "Deposit ETH directly into your will",
+                "View, Update or Cancel your will at any time (optional)"
+                ],
+        category: 'dApp',
+        tag: ['Tailwindcss', 'React','Ethersjs', 'Hardhat', 'Solidity'],
+        link: "https://digital-will-one.vercel.app/",
+        code: "https://github.com/papilo-cloud/digital-will.git"
+    },
+    {
         id: 0,
         title: 'invoice App',
         alt: 'InvoiveApp',
